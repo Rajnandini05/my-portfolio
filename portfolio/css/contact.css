@@ -1,0 +1,122 @@
+/*css reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation bar:logo and image*/
+#logo{
+    margin: 5px 36px;
+    
+}
+
+#logo img{
+    height: 60px;
+    margin: 6px 6px;
+
+}
+
+/*Navigation bar:list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(6, 77, 90);
+    background-color: white;
+}
+/*contact section*/
+#contact{
+    position: relative;
+}
+body{
+    background-image: url(/phone.jpg);
+    background-size: cover;
+    height: 821px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.center{
+    text-align: center;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 20%;
+}
+
+#contact-box label{
+   font-size: 2.1rem;
+   font-family: 'Bree Serif', serif;
+
+}
+/*my contact section*/
+#mycontact{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 2.1rem;
+}
+
+#mycontact table{
+    margin-right: 15px;
+}
+#mycontact tr td{
+    color: rgb(149, 83, 36);
+    font-size: 2.1rem;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-bottom: 50px;
+}
+
+/* Utility Classes */
+.h-primary center{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+}

@@ -1,0 +1,108 @@
+/*css reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation bar:logo and image*/
+#logo{
+    margin: 5px 36px;
+    
+}
+
+#logo img{
+    height: 60px;
+    margin: 6px 6px;
+
+}
+
+/*Navigation bar:list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(6, 77, 90);
+    background-color: burlywood;
+}
+/*Utility classes*/
+.h-primary{
+    font-size: 2rem ;
+}
+.h-secondary{
+    font-size:2.4rem;
+    padding: 20px;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*introduction section*/
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .box{
+    border: 2px solid brown;
+    padding: 56px;
+    margin: 25px 45px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#intro.box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+.box p{
+    font-size: 1.2rem;
+}
+.box table{
+    border-collapse: collapse;
+}
+
+.box tr th{
+    width: 100%;
+    border: 2px solid black;
+}
+.box tr td{
+    width: 100%;
+    border: 2px solid black;
+}
+#intro::before{
+    content: " ";
+    background-image: url(/bg.jpg);
+    opacity:0.3;
+    position: absolute;
+    height: 106%;
+    width: 100%;
+    z-index: -1;
+}

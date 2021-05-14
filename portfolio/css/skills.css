@@ -1,0 +1,99 @@
+/*css reset*/
+*{
+    margin:0;
+    padding:0;
+}
+body::before{
+    content: " ";
+    background-image: url(/skillsbg.jpg);
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation bar:logo and image*/
+#logo{
+    margin: 5px 36px;
+    
+}
+
+#logo img{
+    height: 60px;
+    margin: 6px 6px;
+
+}
+
+/*Navigation bar:list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(6, 77, 90);
+    background-color: burlywood;
+}
+
+
+.skill table{
+    border-collapse: collapse;
+}
+
+.skill table{
+    width: 100%;
+}
+th{
+    height: 50px;
+}
+
+.skill tr th{
+    color: brown;
+    width: 100%;
+    border: 2px solid black;
+}
+.skill tr td{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.skill{
+    border: 5px solid rgb(42, 172, 223);
+    background-color: rgb(220, 236, 243);
+    padding: 56px;
+    margin: 25px 81px;
+    border-radius: 28px;
+    margin-top: 192px;
+    margin-left:300px;
+}
+.skill h2{
+    color: rgb(179, 17, 17);
+}
+
+#bg{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
